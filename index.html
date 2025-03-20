@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDoc - Your Health Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to WebDoc</h1>
+        <p>Your personalized health guide!</p>
+        <h2>Your Health, Our Mission</h2>
+        <button onclick="startInput()">Let's Start</button>
+
+        <div id="inputSection" style="display: none;">
+            <!-- GIF at the top of the input section -->
+            <div class="gif">
+                <img src="Logo Medico GIF by ABmotion.gif" alt="Health GIF" width="350px" height="350px">
+            </div>
+
+            <form id="healthForm">
+                <h3>Basic Information</h3>
+                <label>Name:</label>
+                <input type="text" id="name" required>
+
+                <label>Age:</label>
+                <input type="number" id="age" required>
+
+                <label>Weight (kg):</label>
+                <input type="number" id="weight" required>
+
+                <label>Height (cm):</label>
+                <input type="number" id="height" required>
+
+                <label>Gender:</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <h3>Let's Have Some Meal</h3>
+                <label>Breakfast Time:</label>
+                <input type="time" id="breakfastTime">
+
+                <label>Lunch Time:</label>
+                <input type="time" id="lunchTime">
+
+                <label>Dinner Time:</label>
+                <input type="time" id="dinnerTime">
+
+                <h4>Food Choices:</h4>
+                <div class="food-options">
+                    <label><input type="checkbox" value="rice"> Rice</label>
+                    <label><input type="checkbox" value="milk"> Milk</label>
+                    <label><input type="checkbox" value="meat"> Meat</label>
+                    <label><input type="checkbox" value="flour"> Flour Items</label>
+                    <label><input type="checkbox" value="fastfood"> Fast Food</label>
+                    <label><input type="checkbox" value="fried"> Fried Items</label>
+                    <label><input type="checkbox" value="boiled"> Boiled Items</label>
+                    <label><input type="checkbox" value="egg"> Egg</label>
+                    <label><input type="checkbox" value="fruits"> Fruits</label>
+                    <label><input type="checkbox" value="vegetables"> Vegetables</label>
+                    <label><input type="checkbox" value="nuts"> Nuts</label>
+                    <label><input type="checkbox" value="sugary"> Sugary Foods</label>
+                    <label><input type="checkbox" value="spicy"> Spicy Foods</label>
+                    <label><input type="checkbox" value="seafood"> Seafood</label>
+                    <label><input type="checkbox" value="dairy"> Dairy Products</label>
+                    <label><input type="checkbox" value="caffeine"> Caffeinated Drinks</label>
+                    <label><input type="checkbox" value="wholegrains"> Whole Grains</label>
+                    <label><input type="checkbox" value="legumes"> Legumes (Lentils, Beans)</label>
+                    <label><input type="checkbox" value="alcohol"> Alcohol</label>
+                    <label><input type="checkbox" value="herbs"> Herbs & Spices</label>
+                    <label><input type="checkbox" value="processed"> Processed Meats</label>
+                    <label><input type="checkbox" value="fermented"> Fermented Foods</label>
+                    <label><input type="checkbox" value="sweeteners"> Artificial Sweeteners</label>
+                    <label><input type="checkbox" value="gravy"> Sauces & Gravies</label>
+                    <label><input type="checkbox" value="potatoes"> Potatoes</label>
+                    <label><input type="checkbox" value="pastries"> Pastries & Baked Goods</label>
+                    <label><input type="checkbox" value="berries"> Berries</label>
+                    <label><input type="checkbox" value="tea"> Teas</label>
+                    <label><input type="checkbox" value="soft Drinks"> soft Drinks</label>
+                </div>
+
+                <h3>So Sleepy</h3>
+                <label>Gotta Sleep (Bedtime):</label>
+                <input type="time" id="bedtime">
+
+                <label>Rise and Shine (Wake-up Time):</label>
+                <input type="time" id="wakeTime">
+
+                <h3>Water Intake</h3>
+                <label>Daily Water Intake (Average Liters):</label>
+                <input type="number" id="waterIntake" step="0.1" placeholder="Enter water intake">
+
+                <button type="button" onclick="analyzeHealth()">Get Results</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="resultContainer">
+        <div id="results"></div>
+        <!-- GIF under the result section -->
+        <div class="gif">
+            <img src="Vaccine Vacina GIF.gif" alt="Result GIF" width="200px" height="200px">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

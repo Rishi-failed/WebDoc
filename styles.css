@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #B2DFFC, #FFC8E2, #ffffff);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c6e49;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.food-options label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultContainer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #dfe9f3;
+    border-radius: 5px;
+    display: none;
+}
+
+.gif {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gif img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
